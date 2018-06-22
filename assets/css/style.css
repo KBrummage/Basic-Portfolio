@@ -63,7 +63,10 @@ body{
 
 a{
   text-decoration-line: none;
+  max-width: 100px;
 }
+
+
 
 section{
   clear: both;
@@ -100,19 +103,30 @@ h1{
 
 .photoLibrary{
   display: flex;
-  padding: 20px;
   height: 200px;
+  justify-content: space-evenly;
+
 }
 
-img {
+.selfshot {
   float: left;
   max-width: 15%;
   height: auto;
   margin: 10px;
 }
 
+img{
+  float: left;
+  height: auto;
+  margin: 10px;
+  max-height: 100%;
+  width: auto;
+}
+
+
 img:hover{
-  
+  /* Something that makes it pop out of the div and shows up full screen. */
+
 }
 
 footer{
@@ -145,10 +159,28 @@ width: 100%;
 
 }
 
-button{
+/* button{
   min-height: fit-content;
   min-width: fit-content;
   color: #ffffff;
   background-color: #4aaaa5;
   padding: 5px 15px;
+} */
+
+.slider{
+  height: 50vh;
+  display: flex;
+  overflow-x: auto;
 }
+
+
+ .btn {
+  background-color:whitesmoke
+  color: whitesmoke;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer ;
+  margin: 3px;
+}
+
