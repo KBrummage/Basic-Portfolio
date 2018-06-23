@@ -57,9 +57,25 @@ body{
   padding: 5px;
   color: #777777;
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
-
+  font-weight: bold;
 }
 
+.linkTo{
+  display: flex;
+  font-size: 18px;
+  align-self: flex-end; 
+  justify-content: flex-start;
+  padding: 5px;
+  color: #777777;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
+  font-weight: 100;
+}
+
+.linkTo:hover{
+  text-decoration-line: underline;
+  letter-spacing: .05em;
+  font-weight: 100;
+}
 
 a{
   text-decoration-line: none;
