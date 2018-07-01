@@ -109,8 +109,7 @@ section{
   background-color: #ffffff;
   padding: 15px;
   min-height: 400px;
-  
-
+  vertical-align: middle; 
 }
 
 h1{
@@ -120,11 +119,13 @@ h1{
   margin-left: 1.5rem;
 }
 
+
 .photoLibrary{
   display: flex;
-  height: 200px;
+  vertical-align: auto;
   justify-content: space-evenly;
-
+  align-content: space-around;
+margin: auto auto;
 }
 
 .selfshot {
@@ -135,18 +136,23 @@ h1{
 }
 
 img{
-  float: left;
+
   height: auto;
-  margin: 10px;
-  max-height: 100%;
+  margin: 0;
+  height: 200px;
   width: auto;
 }
 
-
-img:hover{
-  /* Something that makes it pop out of the div and shows up full screen. */
-
+#photoArea{
+  display: flex;
+  height: 200px;
 }
+
+iframe{
+  display: flex;
+  height: 200px;
+}
+
 
 footer{
   position: fixed; 
@@ -203,3 +209,7 @@ width: 100%;
   margin: 3px;
 }
 
+
+
+
+  
